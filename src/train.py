@@ -25,7 +25,8 @@ def main():
     ])
 
     # キーの定義
-    keys = ['left', 'right', 'up', 'down', 'space']
+    # keys = ['left', 'right', 'up', 'down', 'space']
+    keys = ['w', 'a', 's', 'd', 'space']
 
     # データセットとデータローダーの作成
     dataset = RacingDataset(images_dir='../data/images',

@@ -5,3 +5,4 @@ mss
 opencv-python
 Pillow
 numpy
+pygetwindow

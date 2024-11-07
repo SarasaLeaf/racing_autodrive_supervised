@@ -60,7 +60,7 @@ def generate_timestamp():
 
 def main():
     # ウインドウタイトルを指定
-    window_title = "対象のウインドウタイトル"  # ここをキャプチャしたいウインドウのタイトルに変更
+    window_title = "Forza Motorsport"  # ここをキャプチャしたいウインドウのタイトルに変更
     
     # ウインドウの位置とサイズを取得
     monitor = get_window_bounds(window_title)
