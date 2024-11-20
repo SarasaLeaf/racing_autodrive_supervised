@@ -66,6 +66,11 @@ def main():
     monitor = get_window_bounds(window_title)
     logging.info(f"キャプチャ対象のウインドウ位置: {monitor}")
     
+    for ii in range( 3, 0, -1 ):
+        print(f"{ii}", end = "\r")
+        time.sleep(1)
+    print("Start")
+
     # キーボードリスナーの開始
     listener = keyboard.Listener(on_press=on_press, on_release=on_release)
     listener.start()
@@ -94,6 +99,7 @@ def main():
                 f.write(label)
 
             time.sleep(0.05)  # 20 FPS
+            # time.sleep(0.5) # 2 FPS
     except KeyboardInterrupt:
         logging.info("データ収集を終了します。")
     finally:
